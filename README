@@ -1,0 +1,25 @@
+
+resdiv tool, for resistor divider calculation
+
+Copyright (c), Stefan Petersen/Ciellt
+See file COPYING for license.
+
+This program is for optimizing resistive dividers according to existing
+resistor series. Available resistor series are E24, E12, E6 and E3.
+
+When calculating resistive dividers it is usually hard to find a fitting
+resistor pair that both are available in a known resistor series. This
+tool is to help with that.
+
+Command is:
+./resdiv <input voltage> <output voltage> <max error in output voltage>
+
+A good way to run this tool is to start of with very low error, for instance
+0.0001 and then go up until you find a reasonable solution.
+
+The program reports resistor values calculated, the difference between
+selecting these values and the requested voltage output and the error in 
+percent.
+
+resdiv3 is for two outputs, for instance for the LM5060Q1 from National
+Semiconductor.
