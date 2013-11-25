@@ -1,7 +1,7 @@
 /*
  * Resistive divider calculation tool
  *
- * Copyright (c) 2010-2012, Ciellt/Stefan Petersen (spe@ciellt.se)
+ * Copyright (c) 2010-2013, Ciellt/Stefan Petersen (spe@ciellt.se)
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -150,7 +150,7 @@ main(int argc, char *argv[])
 		printf("r1: %2.2f  r2: %2.2f Vout(diff): %f(%f%%)\n", 
 		       e24_list[r1] * multiplier, e24_list[r2],
 		       calculated_Vout - Vout,
-		       (calculated_Vout / Vout - 1.0) / 100.0);
+		       (calculated_Vout / Vout - 1.0) * 100.0);
 	    }
 
 	}
